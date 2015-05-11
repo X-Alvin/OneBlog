@@ -1,0 +1,14 @@
+<uwsgi>
+
+     <pythonpath>/home/alvin/Documents/Program/OneBlog</pythonpath>
+					<virtualenv>/home/alvin/.venv/flask</virtualenv>
+     <module>myapp</module>
+
+     <callable>app</callable>
+
+     <socket>/home/alvin/Documents/Program/OneBlog/myapp_uwsgi.sock</socket>
+     <master/>
+     <processes>4</processes>              
+     <memory-report/>
+     <chmod-socket>777</chmod-socket>
+</uwsgi>

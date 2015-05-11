@@ -1,0 +1,4 @@
+div#container{background-color: #FFFFFF;height:520px;width: 1300px; float:left;}
+div#menu {background-color:#FFFF99; height:505px; width:200px; float:left;}
+div#content {height:505px;float:right;}
+div#footer {background-color:#99bbbb; height:21px;clear:both; text-align:center;float: bottom;font-size: small;}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet"  type="text/css" href="/static/base.css"  >
+<meta http-equiv="Content-Type" content="text/html"charset="utf8">
+</head>
+<body>
+<div id="nav">
+	<h1>&nbsp;All of Me</h1>
+		<p>&nbsp;
+		<a href ="{{url_for('index')}}" target="_self" >主页</a>
+		<a href ="{{url_for('article')}}" target="_self" >日志</a>
+		<a href ="{{url_for('message')}}" target="_self" >留言板</a>
+		<a href ="{{url_for('personnal')}}" target="_self" >个人档</a>
+		</p>
+</div>
+{% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,18 @@
+div#main{
+	background:url('dog.jpg')repeat;
+	height:520px;
+	width: 1300px;
+	float:left;
+}
+div#form-area{
+	padding:0.5em 2em;
+	color:#FFFFFF
+}
+div#entries-area{
+	padding:0.5em 2em;
+	color:#FFFFFF
+}
+.entry p{
+	padding:0.5em 2em;
+	color:#000000
+}

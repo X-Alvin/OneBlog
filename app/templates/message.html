@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="Stylesheet"  type="text/css" href="/static/message.css"  >
+<title>留言板-All of Me</title>
+</head>
+	<div id="main">
+		<div id="form-area">
+		  <p>Please comment here:</p>
+			<form action="/post" method="post">
+				<table>
+					<tr>
+					<th>Name
+					</th>
+					<td><input type="text" size="20" name="name" /></td>
+					</tr>
+					<tr>
+						<th>Comment</th>
+						<td><textarea rows="5" colos="40" name="comments"></textarea>
+						</td>
+					</tr>
+				</table>
+				<p>
+					<button type="sumbit">Commit</button>
+				</p>
+			</form>
+		</div>
+		<div id="entries-area">
+			<h2>The comments history</h2>
+			<div class="entry">
+				{% for visit_info in visit_list %}
+				<h3>{{visit_info[0]}}           {{visit_info[2]|datetime_fmt}}</h3>
+				<p>
+					{{visit_info[1]|nl2br}}
+				</p>
+				{% endfor%}
+			</div>
+		</div>
+	</div>
+{% endblock %}

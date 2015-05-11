@@ -1,0 +1,19 @@
+body{
+					background-color: #99BBBB;
+					font-size: 20px;
+					float:bottom;}
+div#nav {color:#FFFFF0;float:top;}
+#nav a:link, 
+#nav a:visited { 
+color:#FFFFF0; 
+text-decoration:none; 
+} 
+#nav a:hover, 
+#nav a:active { 
+color:#AFFFFF; 
+text-decoration:underline; 
+background:#99BBBB; 
+}
+div#content{
+	background-color: #FFFFFF;
+}
